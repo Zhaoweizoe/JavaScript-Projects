@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <meta charset="UTF-8">
+        </head>
+        <h2> EVENT CHALLENGE</h2>
+        <button onclick="this.innerHTML=Date()">The time is?</button><!--1-->
+
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+        <p id="demo"></p><!--2-->
+
+
+        <button onclick="displayDate()">The time is?</button>
+        <script>
+            function displayDate() {
+              document.getElementById("demo").innerHTML = Date();
+            }
+            </script><!--3-->
+
+        </body>
+        </html>
