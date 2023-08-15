@@ -30,4 +30,33 @@ function Color_Function(){
             Color_Output="Please enter a color exactly as written on the above list.";
     }
     document.getElementById("Output").innerHTML=Color_Output;
-}
+}//Switch Statement Assignment
+
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+var c=document.getElementById("Mycanvas");
+var ctx=c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(500,250);
+ctx.stroke();
+})//Canvas Challenge
+
+
+document.addEventListener("DOMContentLoaded", function(){
+var c2=document.getElementById("Mycanvas2")
+var ctx2=c2.getContext("2d");
+var grd=ctx2.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+ctx2.fillStyle=grd;
+ctx2.fillRect(10,10,150,80)
+})
+
+function Hello_World_Function(){
+    var A=document.getElementsByClassName("Click");
+    A[0].innerHTML="The text has changed!";
+}//document.getElementsByClassName() Method Assignment
+
+
