@@ -23,7 +23,7 @@ td{
     /*This property removes default padding.*/
     padding:0px;
     width:200px;
-    height:200px;
+    height:200px;/*if you want to change the image, make sure your image sizes are the same dimensions*/
     filter:contrast(3);
 }
 
