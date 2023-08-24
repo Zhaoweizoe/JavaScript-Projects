@@ -1,0 +1,8 @@
+OnReadyStateChange Challenge
+Complete these actions:
+
+Define and learn how to use the onreadystatechange Property.
+
+Successfully execute the onreadystatechange Property in the browser.
+
+HELPFUL LINK: AJAX XMLHttpRequest Server Response
