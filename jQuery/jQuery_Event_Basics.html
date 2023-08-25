@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Link the Google APT jQuery files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Event Handling Example</h1>
+        <p>Try Setting Up Multiple Event Responses</p>
+        <input type="text">
+     <script>
+        //Multiple events,same handler
+        $("input").on(
+            "click change",//Bind handlers for multiple events
+            function(){
+                console.log("An input was clicked or changed!")
+            }
+        );
+     </script>
+    </body>
+</html>

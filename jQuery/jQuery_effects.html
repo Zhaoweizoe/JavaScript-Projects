@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--Link the Google APT jQuery files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>jQuery effects</h1>
+        <p>Showing and Hiding Content</p>
+        <div class="hidden">This content will be shown</div>
+     <script>
+        //wait until the document is loaded before running any jQuery
+        $(document).ready(function(){
+         $("p").hide();//hide
+         $("div.hidden").show();//show
+        });
+     </script>
+    </body>
+</html>
