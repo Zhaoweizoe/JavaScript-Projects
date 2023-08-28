@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <p id="XML_Example"></p>
+    <script>
+        var XML_Parser,XML_Document;
+
+        //creates a text string
+        var Movie="<movie>"+
+            "<title>BigWorld</title>"+
+            "<director>Allen</director>"+
+            "<starring>Rose</starring>"+
+            "<year>2000</year>"+
+            "</movie>";
+
+            //creaters an XML DOM parser
+            XML_Parser=new DOMParser();
+
+            //creaters a new XML DOM object using the text string
+            XML_Document=XML_Parser.parseFromString(Movie,"text/xml");
+
+            var filmTitle = XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            var director = XML_Document.getElementsByTagName("director")[0].childNodes[0].nodeValue;
+
+        document.getElementById("XML_Example").innerHTML =
+            "Film Title: " + filmTitle + "<br>" +
+            "Director: " + director;
+
+    </script>
+    </body>
+</html>

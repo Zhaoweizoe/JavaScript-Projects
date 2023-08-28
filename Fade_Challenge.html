@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                opacity: 1;
+                transition: 1s opacity;
+            }
+    
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+            html {
+            background-color: rgb(235, 222, 222);
+           }
+        </style>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                setTimeout(()=>{
+            document.body.classList.remove('fade-out');
+          },1000);
+        });
+        </script>
+    </head>
+    <body>
+        <script>
+            document.body.classList.add('fade-out');
+          
+          </script>
+        <p> A clean fade-in effect for webpages</p>
+    </body>
+</html>
